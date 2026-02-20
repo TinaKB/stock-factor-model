@@ -1,0 +1,52 @@
+{
+  "n_rows": 1255,
+  "n_cols": 14,
+  "missing_pct_top10": {
+    "Open": 0.0,
+    "High": 0.0,
+    "Low": 0.0,
+    "Close": 0.0,
+    "Volume": 0.0,
+    "return": 0.0,
+    "log_return": 0.0,
+    "trailing_eps": 0.0,
+    "trailing_pe": 0.0,
+    "total_revenue": 0.0
+  },
+  "fixes_applied": [
+    "Parsed Date column with utc=True",
+    "Removed timezone information",
+    "Sorted by Date and set as index",
+    "Dropped Dividends and Stock Splits (if present)",
+    "Kept core OHLCV columns",
+    "Converted numeric columns using pd.to_numeric",
+    "Forward-filled missing values",
+    "Dropped remaining NA rows",
+    "Created return and log_return features",
+    "Clipped extreme returns to \u00b130%"
+  ],
+  "Close_summary": {
+    "mean": 14.76461353491977,
+    "std": 13.161066902410377,
+    "min": 3.140000104904175,
+    "max": 59.22999954223633
+  },
+  "Volume_summary": {
+    "mean": 57509438.39442231,
+    "std": 29600298.543643963,
+    "min": 13280300.0,
+    "max": 270803200.0
+  },
+  "return_summary": {
+    "mean": -0.0009494368463356099,
+    "std": 0.04570223780741405,
+    "min": -0.17070806568864028,
+    "max": 0.25586065751786635
+  },
+  "log_return_summary": {
+    "mean": -0.0019828060626417153,
+    "std": 0.045356180530963706,
+    "min": -0.1871830334719986,
+    "max": 0.22782112042488034
+  }
+}
